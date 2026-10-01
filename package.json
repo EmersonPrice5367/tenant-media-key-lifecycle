@@ -1,0 +1,23 @@
+{
+  "name": "tenant-media-key-lifecycle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/creator_delivery_service.ts",
+    "demo": "node --experimental-strip-types scripts/provision_tenant.ts",
+    "test": "node --experimental-strip-types --test test/tenant_lifecycle.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
